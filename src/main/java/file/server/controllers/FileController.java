@@ -20,9 +20,9 @@ public class FileController {
 	@Autowired
 	private FileService fileService;
 
-	@RequestMapping("/fer")
+	@RequestMapping("/kot")
 	public String index() {
-		return "fer";
+		return "Доброе утро вредина)";
 	}
 
 	@PostMapping
