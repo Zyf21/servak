@@ -22,7 +22,7 @@ public class FileController {
 
 	@GetMapping("/")
 	public String index() {
-		return "Greetings from Spring Boot!";
+		return "greeting";
 	}
 
 	@PostMapping
