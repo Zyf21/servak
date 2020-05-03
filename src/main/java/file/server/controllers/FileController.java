@@ -20,7 +20,7 @@ public class FileController {
 	@Autowired
 	private FileService fileService;
 
-	@GetMapping("/fer")
+	@RequestMapping("/fer")
 	public String index() {
 		return "fer";
 	}
