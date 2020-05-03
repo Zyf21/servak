@@ -20,6 +20,11 @@ public class FileController {
 	@Autowired
 	private FileService fileService;
 
+	@GetMapping("/")
+	public String index() {
+		return "Greetings from Spring Boot!";
+	}
+
 	@PostMapping
 	public File addFile (@RequestBody File file){
 		log.debug("addFile: site = {}", file);
