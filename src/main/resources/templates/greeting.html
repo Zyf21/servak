@@ -1,18 +1,16 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="https://www.thymeleaf.org">
 <head>
-    <title>Getting Started: Serving Web Content</title>
+    <title>Getting Started: Handling Form Submission</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<p>Текст вверху изображения на дополнительном расстоянии в 20 пикселей</p>
-<img src="resources/111.png" align="left" width="195" height="157" hspace="50" vspace="20" />
-<p>Текст справа от изображения на дополнительном расстоянии в 50 пикселей</p>
-<p>Текст</p>
-<p>Текст</p>
-<p>Текст</p>
-<p>Текст</p>
-<p>Текст</p>
-<p>Текст внизу изображения на доболнительном расстоянии в 20 пикселей</p>
+<h1>Form</h1>
+<form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
+    <p>Id: <input type="text" th:field="*{id}" /></p>
+    <p>Message: <input type="text" th:field="*{content}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+<img src="rrr.jpg">
 </body>
 </html>

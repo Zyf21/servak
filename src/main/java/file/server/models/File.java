@@ -21,8 +21,8 @@ public class File {
 	private Long fileId;
 	private String fileName;
 	@ManyToOne
-	@JoinColumn(name = "user_id")
-	private User user;
+	@JoinColumn(name = "userf_id")
+	private UserF userF;
 	private String objectName;
 	private String careerName;
 	private String distance;
