@@ -13,7 +13,7 @@ public class GreetingController {
 	@GetMapping("/greeting")
 	public String greetingForm(Model model) {
 		model.addAttribute("greeting", new Greeting());
-		return "indexw";
+		return "greeting";
 	}
 
 	@PostMapping("/greeting")
